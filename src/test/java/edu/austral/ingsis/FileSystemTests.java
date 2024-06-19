@@ -3,7 +3,6 @@ package edu.austral.ingsis;
 import static java.util.Map.entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.austral.ingsis.clifford.FileSystemClass;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
@@ -59,9 +58,8 @@ public class FileSystemTests {
             entry("cd emily", "moved to directory 'emily'"),
             entry("touch elizabeth.txt", "'elizabeth.txt' file created"),
             entry("mkdir t-bone", "'t-bone' directory created"),
-            entry("touch elizabeth.txt", "'elizabeth.txt' file created"),
             entry("ls", "t-bone elizabeth.txt"),
-            entry("rm", "cannot remove 't-bone', is a directory"),
+            entry("rm t-bone", "cannot remove 't-bone', is a directory"),
             entry("rm --recursive t-bone", "'t-bone' removed"),
             entry("ls", "elizabeth.txt"),
             entry("rm elizabeth.txt", "'elizabeth.txt' removed"),
