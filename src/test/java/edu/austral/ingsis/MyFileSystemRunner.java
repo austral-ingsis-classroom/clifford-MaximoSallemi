@@ -3,10 +3,10 @@ package edu.austral.ingsis;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileSystem implements FileSystemRunner {
+public class FileSystemRunnerClass implements FileSystemRunner {
   private final edu.austral.ingsis.clifford.FileSystem fileSystem;
 
-  public FileSystem(edu.austral.ingsis.clifford.FileSystem fileSystem) {
+  public FileSystemRunnerClass(edu.austral.ingsis.clifford.FileSystem fileSystem) {
     this.fileSystem = fileSystem;
   }
 
