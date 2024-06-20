@@ -12,7 +12,7 @@ public class Rm implements Command {
     this.current = current;
     this.recursive = recursive;
     if (name.isEmpty()) {
-      this.name = current.getChildren().getFirst().name();
+      this.name = current.getChildren().get(0).name();
     } else {
       this.name = name;
     }
