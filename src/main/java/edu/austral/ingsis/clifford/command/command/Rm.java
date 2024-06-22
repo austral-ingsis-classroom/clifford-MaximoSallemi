@@ -33,6 +33,6 @@ public class Rm implements Command {
         }
       }
     }
-    return "cannot remove '" + name + "', no such file or directory";
+    return "cannot remove '" + name + "', there is no such file or directory";
   }
 }
