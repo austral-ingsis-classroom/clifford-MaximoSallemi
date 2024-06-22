@@ -1,12 +1,13 @@
 package edu.austral.ingsis;
 
+import edu.austral.ingsis.clifford.FileSystem;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyFileSystemRunner implements FileSystemRunner {
   private final edu.austral.ingsis.clifford.FileSystem fileSystem;
 
-  public MyFileSystemRunner(edu.austral.ingsis.clifford.FileSystem fileSystem) {
+  public MyFileSystemRunner(FileSystem fileSystem) {
     this.fileSystem = fileSystem;
   }
 
