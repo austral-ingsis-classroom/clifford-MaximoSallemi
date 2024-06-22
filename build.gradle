@@ -48,9 +48,6 @@ jacocoTestCoverageVerification {
 
 spotless {
     java {
-        endWithNewline() // Ensures files end with a newline
-        trimTrailingWhitespace() // Removes trailing whitespace
-        indentWithSpaces(2) // Indents with 2 spaces instead of a tab
-        // Sets line endings to carriage return and line feed
+        googleJavaFormat()
     }
 }
