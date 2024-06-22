@@ -44,7 +44,7 @@ public class FileSystemClass implements FileSystem {
   }
 
   @Override
-  public String execute(String command) {
+  public String executeCommand(String command) {
     String name = command.split(" ")[0];
     Command toExecute = commands.get(name).build(command);
     return toExecute.execute();

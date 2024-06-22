@@ -14,7 +14,7 @@ public class MyFileSystemRunner implements FileSystemRunner {
   public List<String> executeCommands(List<String> commands) {
     List<String> result = new ArrayList<>();
     for (String command : commands) {
-      String r = fileSystem.execute(command);
+      String r = fileSystem.executeCommand(command);
       result.add(r);
     }
     return result;

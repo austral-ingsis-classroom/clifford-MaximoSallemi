@@ -7,5 +7,5 @@ public interface FileSystem {
 
   Directory getRoot();
 
-  String execute(String command);
+  String executeCommand(String command);
 }
